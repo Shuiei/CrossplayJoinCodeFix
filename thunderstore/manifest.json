@@ -1,0 +1,9 @@
+{
+  "name": "CrossplayJoinCodeFix",
+  "version_number": "@VERSION@",
+  "website_url": "https://github.com/Shuiei/CrossplayJoinCodeFix",
+  "description": "Server-side fix for crossplay servers that show as offline: retries PlayFab's incomplete join-code answer instead of crashing the check, so the lobby still goes online.",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2351"
+  ]
+}

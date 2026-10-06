@@ -14,5 +14,9 @@ activates the lobby: the world runs, but nobody can join. This plugin checks the
 
 Settings: `BepInEx/config/local.crossplayjoincodefix.cfg`. Clients do not need the plugin.
 
+Install with a mod manager: [Tie-CrossplayJoinCodeFix on Thunderstore](https://thunderstore.io/c/valheim/p/Tie/CrossplayJoinCodeFix/).
+`thunderstore/build.sh <folder>` builds that package (mod page, icon from `thunderstore/make_icon.py`,
+changelog and manifest in `thunderstore/`; the version is `Version` in the plugin).
+
 Build: `dotnet build -c Release` (references the game's managed DLLs and BepInEx from the paths in
 the .csproj), then copy `CrossplayJoinCodeFix.dll` to the server's `BepInEx/plugins/`.
