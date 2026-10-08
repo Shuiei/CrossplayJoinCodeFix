@@ -12,7 +12,7 @@ activates the lobby: the world runs, but nobody can join. This plugin checks the
 - otherwise the check is repeated every `RetrySeconds` (default 2) for up to `TimeoutSeconds`
   (default 30); after that a new join code is registered and the wait starts again.
 
-Settings: `BepInEx/config/local.crossplayjoincodefix.cfg`. Clients do not need the plugin.
+Settings: `BepInEx/config/Tie.CrossplayJoinCodeFix.cfg`. Clients do not need the plugin.
 
 Install with a mod manager: [Tie-CrossplayJoinCodeFix on Thunderstore](https://thunderstore.io/c/valheim/p/Tie/CrossplayJoinCodeFix/).
 `thunderstore/build.sh <folder>` builds that package (mod page, icon from `thunderstore/make_icon.py`,

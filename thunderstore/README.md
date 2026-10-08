@@ -33,7 +33,7 @@ copy `CrossplayJoinCodeFix.dll` into the server's `BepInEx/plugins`. Players nee
 
 ## Settings
 
-`BepInEx/config/local.crossplayjoincodefix.cfg`, section `[JoinCode]`:
+`BepInEx/config/Tie.CrossplayJoinCodeFix.cfg`, section `[JoinCode]`:
 
 | Setting | Default | Meaning |
 |---|---|---|

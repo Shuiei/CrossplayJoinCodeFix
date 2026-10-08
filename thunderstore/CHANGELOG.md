@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0
+
+- The plugin's id is now `Tie.CrossplayJoinCodeFix`, so its settings are in
+  `BepInEx/config/Tie.CrossplayJoinCodeFix.cfg`. An existing `local.crossplayjoincodefix.cfg` is
+  moved to the new name on the first start, with its settings.
+
 ## 1.0.0
 
 - First release: guards the PlayFab join-code check of crossplay servers (complete answer: vanilla;

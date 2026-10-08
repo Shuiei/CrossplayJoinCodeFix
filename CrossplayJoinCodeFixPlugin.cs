@@ -21,9 +21,12 @@ namespace CrossplayJoinCodeFix;
 [BepInPlugin(Guid, "CrossplayJoinCodeFix", Version)]
 public sealed class CrossplayJoinCodeFixPlugin : BaseUnityPlugin
 {
-	public const string Guid = "local.crossplayjoincodefix";
+	public const string Guid = "Tie.CrossplayJoinCodeFix";
 
-	public const string Version = "1.0.0";
+	// The id before 1.1.0, which named the settings file.
+	private const string OldGuid = "local.crossplayjoincodefix";
+
+	public const string Version = "1.1.0";
 
 	internal static ConfigEntry<float> TimeoutSeconds;
 
@@ -35,6 +38,19 @@ public sealed class CrossplayJoinCodeFixPlugin : BaseUnityPlugin
 
 	private void Awake()
 	{
+		// Settings made under the old id move to the new file, so they are kept.
+		string old = System.IO.Path.Combine(Paths.ConfigPath, OldGuid + ".cfg");
+		if (System.IO.File.Exists(old) && !System.IO.File.Exists(Config.ConfigFilePath))
+		{
+			try
+			{
+				System.IO.File.Move(old, Config.ConfigFilePath);
+				Config.Reload();
+			}
+			catch (System.IO.IOException)
+			{
+			}
+		}
 		Log = Logger;
 		TimeoutSeconds = Config.Bind("JoinCode", "TimeoutSeconds", 30f, "How long to keep re-checking an incomplete PlayFab answer before registering a new join code.");
 		RetrySeconds = Config.Bind("JoinCode", "RetrySeconds", 2f, "Delay between two join-code checks while waiting.");
