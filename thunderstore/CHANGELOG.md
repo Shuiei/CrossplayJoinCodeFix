@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1
+
+- Mod page only: a Buy Me a Coffee button. No change to the mod.
+
 ## 1.1.0
 
 - The plugin's id is now `Tie.CrossplayJoinCodeFix`, so its settings are in

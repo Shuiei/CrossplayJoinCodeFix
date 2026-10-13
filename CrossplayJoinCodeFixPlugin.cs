@@ -26,7 +26,7 @@ public sealed class CrossplayJoinCodeFixPlugin : BaseUnityPlugin
 	// The id before 1.1.0, which named the settings file.
 	private const string OldGuid = "local.crossplayjoincodefix";
 
-	public const string Version = "1.1.0";
+	public const string Version = "1.1.1";
 
 	internal static ConfigEntry<float> TimeoutSeconds;
 

@@ -47,3 +47,9 @@ copy `CrossplayJoinCodeFix.dll` into the server's `BepInEx/plugins`. Players nee
 - It only touches the join-code check; servers without crossplay are not affected.
 
 Source and issues: [github.com/Shuiei/CrossplayJoinCodeFix](https://github.com/Shuiei/CrossplayJoinCodeFix)
+
+## Support
+
+If this mod saved you some trouble:
+
+[![Buy me a coffee](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://buymeacoffee.com/tieboo)
